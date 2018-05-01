@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     int score = 0;
 
-public int calculateScore(View view) {
+public int calculateScore() {
 
 //finding all the possible answers
     CheckBox Q1A1 = findViewById( R.id.Q1A1 );
@@ -117,10 +117,6 @@ public int calculateScore(View view) {
         String scoreMessage = createScoreSummary( name, score );
 
         displayMessage( scoreMessage );
-    }
-
-    private int calculateScore() {
-        return score;
     }
 
     private void displayMessage(String message) {
